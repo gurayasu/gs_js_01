@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ぐるれこめんど</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+<div class="d-demo">
+    <div class="d-demo__wrap">
+        <ul class="d-demo__list d-demo__list--left">
+            <li class="d-demo__item"><img src="img/top__1.jpg" alt=""></li>
+            <li class="d-demo__item"><img src="img/top__2.jpg" alt=""></li>
+            <li class="d-demo__item"><img src="img/top__3.jpg" alt=""></li>
+            <li class="d-demo__item"><img src="img/top__4.jpg" alt=""></li>
+        </ul>
+
+        <ul class="d-demo__list d-demo__list--left">
+            <li class="d-demo__item"><img src="img/top__1.jpg" alt=""></li>
+            <li class="d-demo__item"><img src="img/top__2.jpg" alt=""></li>
+            <li class="d-demo__item"><img src="img/top__3.jpg" alt=""></li>
+            <li class="d-demo__item"><img src="img/top__4.jpg" alt=""></li>
+        </ul>
+    <div class="d-demo__text text__center">
+            <h1 class="top__title">ぐるれこめんど</h1>
+            <h2 class="top__semititle">行きたいお店を見つけてくれる</h2>
+    </div>
+    </div>
+</div>
+
+</header>
+
+<main>
+
+<!-- 言語切り替え -->
+
+<!-- <div class="btn-lang">
+    <a data-siteview="jp" class="jp" href="kadai.html">Japanese</a>
+    /
+    <a data-siteview="en" class="en" href="kadai.html">English</a>
+</div> -->
+
+<div class="text__right">
+        <div class="lan__select">
+            <select name ="lan" id="lan">
+            　  <option value="日本語">言語を選択(Language Select)</option>  
+                <option value="日本語">日本語</option>
+                <option value="English">English</option>
+            </select>
+        </div>
+</div>
+
+<!-- ABOUT -->
+
+    <div class="about main__wrapper text__center">
+        <h3 class="about__title">ABOUT</h3>
+            <p class="about__sentence">あなたが食べたいグルメに合わせて
+            お店を選んでくれるサービスです。紹介するお店は全て「食べログ百名店」に
+            選べれている一流のお店です。新たなお店との出会いをお届けします。
+            ※ β版のため紹介するお店は東京都内のお店に限定されています。
+            </p>
+    </div>
+<!-- HOW -->
+
+    <div class="main__wrapper text__center">
+        <h3 class="about__title">HOW</h3>
+    </div> 
+
+    <div class="main__wrapper text__center">
+        <div class="select__wrapper">
+            <div class="select__wrapper__1 select__wrapper__2">
+                <select name ="type" id="type">
+                　  <option value="">食べたいグルメを選択 (Select menu)</option>  
+                    <option value="カレー">カレー (Curry)</option>
+                    <option value="中華料理">中華 (Chinese)</option>
+                    <option value="ラーメン">ラーメン (Ramen)</option>
+                    <option value="パン">パン (Bread)</option>
+                    <option value="スイーツ">スイーツ (Sweet)</option>
+                </select>
+             </div>
+             <div class="btn__detail">
+                <button id="btn">GO</button>
+            </div>
+        </div>
+
+        <div class="result__wrapper main__wrapper">
+            <div class="result__wrapper__text content-jp">
+                <p id="result">れこめんどするお店</p>
+            </div>
+            <div class="result__wrapper__img">
+                <img src="img/logo.jpeg" alt="" id="result__picture">
+            </div>
+        </div>
+    </div>
+
+    <!-- マップ表示 -->
+    
+        <div class="result__wrapper main__wrapper" id="map__wrapper">
+            <p id="map__title">マップ</p>
+            <div class="map__link">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6556384192304!2d139.8084371152596!3d35.71009088018767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed0d12f9adf%3A0x7d1d4fb31f43f72a!2z5p2x5Lqs44K544Kr44Kk44OE44Oq44O8!5e0!3m2!1sja!2sjp!4v1628900133094!5m2!1sja!2sjp" 
+                width="100%"
+                height="auto" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                id = "map"></iframe> 
+            </div>
+        </div>
+
+</main>
+
+<!-- FOOTER -->
+    
+<footer class="footer text__center">
+    <div class="wrapper">
+        <small class="copyrights">copyrights 2021 Gururecommend Tokyo All RIghts Reserved.</small>
+    </div>
+</footer>
+
+<script src="js/kadai.js"></script>
+</body>
+</html>
